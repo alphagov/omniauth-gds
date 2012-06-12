@@ -2,10 +2,10 @@
 require File.expand_path('../lib/omniauth-gds/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Mazz"]
-  gem.email         = ["mazz.mosley@digital.cabinet-office.gov.uk"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["Mazz", "Blaine"]
+  gem.email         = ["mazz.mosley@digital.cabinet-office.gov.uk", "romeda@gmail.com"]
+  gem.description   = %q{ Omniauth strategy for GDS oauth2 provider }
+  gem.summary       = %q{ Omniauth strategy for GDS oauth2 provider }
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -14,4 +14,10 @@ Gem::Specification.new do |gem|
   gem.name          = "omniauth-gds"
   gem.require_paths = ["lib"]
   gem.version       = Omniauth::Gds::VERSION
+
+  gem.add_dependency 'omniauth-oauth2', '~> 1.0'
+
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'gem_publisher', '~> 1.0.0'
+
 end
