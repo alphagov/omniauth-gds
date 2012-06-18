@@ -13,7 +13,8 @@ class OmniAuth::Strategies::Gds < OmniAuth::Strategies::OAuth2
 
   extra do
     {
-      user: user
+      user: user,
+      permissions: user['permissions']
     }
   end
 
