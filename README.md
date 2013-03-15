@@ -1,6 +1,6 @@
 # Omniauth::Gds
 
-TODO: Write a gem description
+Omniauth strategy for GDS oauth2 provider
 
 ## Installation
 
