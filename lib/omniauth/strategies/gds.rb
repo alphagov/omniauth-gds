@@ -15,7 +15,7 @@ class OmniAuth::Strategies::Gds < OmniAuth::Strategies::OAuth2
     {
       user: user,
       permissions: user['permissions'],
-      organisations: user['organisations'],
+      organisation: user['organisation'],
     }
   end
 
