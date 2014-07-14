@@ -16,9 +16,9 @@ Gem::Specification.new do |gem|
   gem.version       = Omniauth::Gds::VERSION
 
   gem.add_dependency 'omniauth-oauth2', '~> 1.0'
+  gem.add_dependency 'multi_json', '~> 1.10'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency "gemfury"
   gem.add_development_dependency 'gem_publisher', '1.2.0'
-
 end
