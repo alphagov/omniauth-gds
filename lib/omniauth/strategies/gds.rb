@@ -20,7 +20,7 @@ class OmniAuth::Strategies::Gds < OmniAuth::Strategies::OAuth2
   end
 
   def user
-    @user ||= MultiJson.decode(access_token.get('/user.json').body)['user']
+    @user ||= MultiJson.decode(access_token.get("/user.json?client_id=#{CGI.escape(options.client_id)}").body)['user']
   end
 
 end
