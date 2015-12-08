@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use with Devise, add the following to your Devise initializer (typically `devise.rb`):
+
+```ruby
+  config.omniauth :gds,
+    ENV.fetch("APPLICATION_ID"), # Obtained when generating a new application
+    ENV.fetch("APPLICATION_SECRET"),
+    client_options: {
+      site: ENV.fetch("SIGNIN_URL") # The location of your signonotron2 install
+    }
+```
 
 ## Contributing
 
