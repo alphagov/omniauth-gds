@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Omniauth::Gds::VERSION
 
-  gem.add_dependency 'omniauth-oauth2', '1.6.0'
+  gem.add_dependency 'omniauth-oauth2', '1.8.0'
   gem.add_dependency 'multi_json', '~> 1.10'
 
   gem.add_development_dependency 'rake'
