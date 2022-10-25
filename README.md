@@ -1,5 +1,7 @@
 # Omniauth::Gds
 
+**This project was archived in October 2022, the functionality has been ported into [gds-sso](https://github.com/alphagov/gds-sso/pull/262).**
+
 Omniauth strategy for GDS oauth2 provider
 
 ## Installation
